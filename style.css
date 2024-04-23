@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+*{
+    margin:0;
+    padding:0;
+}
+
+:root {
+	--main: #0ea5e9;
+	--accent: #ec4899;
+	--background: #f0f0f0;
+	--white: #ffffff;
+	--grey: #e6e6e6;
+	--light-grey: #e0e0e0;
+	--dark-grey: #9b9b9b;
+
+	--header-bg: var(--white);
+	--main-bg: var(--background);
+
+	--text: #000;
+	--subtext: #8b8b8b;
+}
+
+body{
+    background: var(--background);
+}
+#header{
+    background: var(--header-bg);
+    height: 20vh;
+}
+#books-container {
+    background: var(--background);
+    height: 80%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
+    grid-auto-rows: 20rem;
+    gap: 1rem;
+}
+.card{
+    border: 1px solid #ddd;
+    margin: 10px 0 10px;
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--header-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+    position: relative;
+}
+h2{
+    text-transform: capitalize;
+}
+    
+::backdrop {
+	background: black;
+	opacity: 0.6;
+
+	border: 1px solid blue;
+	/* display: flex; */
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+button, form{
+    all: unset;
+}
+/* Button style */
+button{
+    cursor: pointer;
+	height: minmax(3em, 1fr);
+	width: 8em;
+	border-radius: 6px;
+	font-family: Inter;
+	font-weight: 700px;
+	background: var(--background);
+	text-align: center;
+	transition: 0.3s;
+}
+dialog {
+	margin: 0 auto;
+	position: absolute;
+	top: 25%;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	padding: 0.5em;
+}
