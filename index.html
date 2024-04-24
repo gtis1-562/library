@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="An application that allows you to input books 
+    of you choosing and mark them read or unread to know for later.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -20,16 +22,19 @@
             <form id="add-book-form">
                 <div>
                     <label for="book-title">Book Title<span aria-label="required">*</span></label>
+                    <br>
                     <input type="text" id="book-title" name="book-title" placeholder="title" required maxlength="255">
                 </div>
 
                 <div>
                     <label for="book-author">Book Author<span aria-label="required">*</span></label>
+                    <br>
                     <input type="text" id="book-author" name="book-author" placeholder="author" required maxlength="255">
                 </div>
 
                 <div>
                     <label for="book-pages">Book Pages<span aria-label="required">*</span></label>
+                    <br>
                     <input type="number" id="book-pages" name="book-pages" placeholder="123" required min="1" max="20000">
                 </div>
 

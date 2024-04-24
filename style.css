@@ -12,7 +12,9 @@
 	--white: #ffffff;
 	--grey: #e6e6e6;
 	--light-grey: #e0e0e0;
+    --cancel: #DDDDDD;
 	--dark-grey: #9b9b9b;
+    
 
 	--header-bg: var(--white);
 	--main-bg: var(--background);
@@ -23,6 +25,7 @@
 
 body{
     background: var(--background);
+    font-family: "Inter", sans-serif;
 }
 #header{
     background: var(--header-bg);
@@ -57,10 +60,9 @@ h2{
 ::backdrop {
 	background: black;
 	opacity: 0.6;
-
 	border: 1px solid blue;
-	/* display: flex; */
 }
+
 #header{
     display: flex;
     flex-direction: row;
@@ -80,9 +82,14 @@ button{
 	font-weight: 700px;
 	background: var(--background);
 	text-align: center;
-	transition: 0.3s;
+	transition: ease 0.3s;
+}
+button:hover{
+    transform: scale(1.10);
+    background: var(--dark-grey);
 }
 dialog {
+    height: 50%;
 	margin: 0 auto;
 	position: absolute;
 	top: 25%;
@@ -90,3 +97,24 @@ dialog {
 	border-radius: 8px;
 	padding: 0.5em;
 }
+
+dialog div{
+    height: 15%;
+}
+#cancel-button{
+    background: var(--cancel);
+}
+.btn-read-marker{
+    background-color: #4ade80;
+}
+.btn-read-marker:hover{
+    background-color: #228b49;
+}
+.btn-unread-marker{
+    background-color: #fb923c;
+}
+.btn-unread-marker:hover{
+    background-color: #a15e28;
+}
+
+
